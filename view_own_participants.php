@@ -9,7 +9,7 @@ $schoolid=$_SESSION['sch_id'];
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>origin participants</title>
+		<title>your participants</title>
 		<?php
 		include('includes/links/stylelinks.php');
 		?>
