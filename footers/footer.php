@@ -42,7 +42,7 @@
 				</div>
 				<hr>
 				<div class="copyright_area col-md-12 col-12 text-center p-1">
-					<p class="text-capitalize text-white">&#169 2020 doaba college.all right reserved.</p>
+					<p class="text-capitalize text-white">&#169 2020 xyz college.all right reserved.</p>
 					<p class="text-capitalize text-white">design & created by amit mathur and deepanjali sharma</p>
 				</div>
 			</main>
