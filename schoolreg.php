@@ -1,9 +1,7 @@
-
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>student registration</title>
+		<title>school registration</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,9 +11,13 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	</head>
 	<body>
+		<?php
+		include('includes/navbars/mainnav.php')
+		?>
 		<div class="container">
-			<div class="schlmain-div">
-				<div class="schl-reg-heading text-center text-white text-uppercase"><h4 class="animated heartBeat">School Registration</h4></div>
+			<div class="formmain-div">
+				<div class="heading text-center text-white text-uppercase"><h4 class="animated heartBeat">School Registration</h4></div>
+				<div class="formcontent">
 				<form action="schinfo.php" method="post" class="needs validation">
 					<div class="form-group">
 						<label for="schoolname">School name</label>
@@ -36,65 +38,70 @@
 						</select>
 					</div>
 					<div class="row">
-	<div class="col">
-		<div class="form-group">
-			<label for="priname">Principal name</label>
-			<input type="text" name="priname" placeholder="Enter principal name" value=""  class="form-control" required>
-		</div>
-	</div>
-		
-		<div class="col">
-			<div class="form-group">
-				<label for="pricontact">Principal contact</label>
-				<input type="tel"  maxlength="10" name="pricontact" placeholder="Enter contact" value=""  class="form-control" required>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-	<div class="col">
-		<div class="form-group">
-			<label for="inchname">Incharge name</label>
-			<input type="text" name="inchname" placeholder="Enter Incharge name" value=""  class="form-control" required>
-		</div>
-	</div>
-		
-		<div class="col">
-			<div class="form-group">
-				<label for="inchcontact">Incharge contact</label>
-				<input type="tel" maxlength="10" name="inchcontact" placeholder="Enter contact" value=""  class="form-control" required>
-			</div>
-		</div>
-	</div>
-<div class="row">
-	<div class="col">
-		<div class="form-group">
-			<label for="email">Email</label>
-			<input type="email" name="email" placeholder="Enter email" value=""  class="form-control" required>
-		</div>
-	</div>
-		
-		<div class="col">
-			<div class="form-group">
-				<label for="password">Password</label>
-				<input type="password" name="password" placeholder="Enter password" value=""  class="form-control" required>
-			</div>
-		</div>
-	</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="priname">Principal name</label>
+								<input type="text" name="priname" placeholder="Enter principal name" value=""  class="form-control" required>
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<label for="pricontact">Principal contact</label>
+								<input type="tel"  maxlength="10" name="pricontact" placeholder="Enter contact" value=""  class="form-control" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="inchname">Incharge name</label>
+								<input type="text" name="inchname" placeholder="Enter Incharge name" value=""  class="form-control" required>
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<label for="inchcontact">Incharge contact</label>
+								<input type="tel" maxlength="10" name="inchcontact" placeholder="Enter contact" value=""  class="form-control" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" name="email" placeholder="Enter email" value=""  class="form-control" required>
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" name="password" placeholder="Enter password" value=""  class="form-control" required>
+							</div>
+						</div>
+					</div>
 					
 					<div class="forregister">
 						<div class="form-group">
 							<label>Already have an account</label>
-							<a href="schoollogin.php">click here</a>
+							<a href="schoollogin_form.php">click here</a>
 						</div>
 					</div>
 					<button type="submit" name="submit" class="btn btn-danger">Register</button>
 					
 				</form>
-				
+				</div>
 			</div>
 		</div>
-		
+
+		<?php
+		include("footers/footer.php");
+		?>
+		<a href="#" class="gotop">
+			<i class="fas fa-arrow-up"></i>
+		</a>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

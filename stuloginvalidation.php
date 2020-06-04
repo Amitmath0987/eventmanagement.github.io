@@ -1,7 +1,4 @@
 <?php
- 
-	
-// to connect with the database
 include("connection.php");
 
 
@@ -20,6 +17,8 @@ if(isset($_POST["submit"])){
 	$result=mysqli_query($con,$query);
 	while ($row = mysqli_fetch_array($result)) {
 		$stuname = $row['student_name'];
+		$class = $row['class'];
+		$rollno = $row['rollno'];
 	}
 
 // compare the enter data with the already entered from the table row
@@ -32,11 +31,14 @@ if(isset($_POST["submit"])){
 if(mysqli_num_rows($result)>0){
 	session_start();
 	$_SESSION['username']=$stuname;
+	$_SESSION['class']=$class;
+	$_SESSION['rollno']=$rollno;
 	header('location:studentdashboard.php');
 
-}else{
+}
+else{
 	echo "wrong email and password";
-	 header('location:login.php');
+	 header('location:stulogin_form.php');
 
 }
 

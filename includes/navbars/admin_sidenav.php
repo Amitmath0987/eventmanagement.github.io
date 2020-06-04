@@ -3,7 +3,7 @@
 		</a>
 		<h2 class="text-center text-dnager">Hello! <?php echo $_SESSION['name'];?></h2>
 		<hr>
-		<a href="#"><i class="fas fa-home"></i>Home</a>
+		<a href="admindashboard.php"><i class="fas fa-home"></i>Home</a>
 		<hr>
 		<a href="#"><i class="fas fa-folder-plus"></i>Add  events</a>
 		<a href="upcomingevent_form.php"><i class="fas fa-calendar-plus"></i>Add upcoming event</a>
@@ -31,7 +31,7 @@
 		
 		<hr>
 		<div class="dropdown">
-			<a href="#"><i class="fas fa-flag"></i>View results</a>
+			<a href="view_ad_result.php"><i class="fas fa-flag"></i>View results</a>
 			<a class="dropdown-toggle" data-toggle="dropdown">
 				<i class="fas fa-users"></i>view users
 			</a>

@@ -13,7 +13,7 @@ include('includes/links/stylelinks.php');
 <!-- <div class="row"> -->
 <div class="col-lg-12 col-md-12 col-12">
 	<h1 class="text-center text-danger text-uppercase"></h1>
-	<table class=" table  table-striped table-bordered table-hover">
+	<table class=" table  table-striped table-bordered table-hover table-responsive-sm">
 	<tr class="text-center bg-dark text-white">
 		<th>Sch_id</th>
 		<th>School Name</th>
@@ -55,6 +55,9 @@ $qy="select *from query";
 </div>
 <?php
 include('includes/links/scriptlinks.php');
+?>
+<?php 
+include('includes/links/js/adsidenav_script.js');
 ?>
 </body>
 </html>

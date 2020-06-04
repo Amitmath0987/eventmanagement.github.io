@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['schname']))
-	header('location:schoollogin.php');
+	header('location:schoollogin_form.php');
 ?>
 
 
@@ -17,11 +17,11 @@ include('includes/links/stylelinks.php');
 <body>
 	<?php include('includes/navbars/schoolnav.php');
 			?>
-<div class="container">
+<div class="container py-5">
 <!-- <div class="row"> -->
 <div class="col-lg-12 col-md-12 col-12 pt-4">
 	<h1 class="text-center text-danger text-uppercase">Origin Results</h1>
-	<table class=" table  table-striped table-bordered table-hover">
+	<table class=" table  table-striped table-bordered table-hover table-responsive-sm">
 	<tr class="text-center bg-dark text-white">
 		
 		<th>Result file</th>
@@ -55,6 +55,9 @@ $qy="select *from origin_results";
 
 <!-- </div>
  --></div>
+ <?php
+		include("footers/school_footer.php");
+		?>
 <?php
 include('includes/links/scriptlinks.php');
 ?>

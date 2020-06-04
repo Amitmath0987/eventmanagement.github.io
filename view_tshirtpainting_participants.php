@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['name']))
-	header('location:adminlogin.php');
+	header('location:adminlogin_form.php');
 ?>
 
 
@@ -19,7 +19,7 @@ include('includes/links/stylelinks.php');
 <!-- <div class="row"> -->
 <div class="col-lg-12 col-md-12 col-12">
 	<h1 class="text-center text-danger text-uppercase">tshirt painting participants</h1>
-	<table class=" table  table-striped table-bordered table-hover">
+	<table class=" table  table-striped table-bordered table-hover table-responsive-sm">
 	<tr class="text-center bg-dark text-white">
 		<th>School name</th>
 		<th>Team no.</th>
@@ -35,7 +35,7 @@ include('includes/links/stylelinks.php');
 include("connection.php");
 
 
-$qy="select *from originparticipants where event_name='T-Shirt painting'";
+$qy="select *from originparticipants where event_name='T- Shirt Painting'";
 	$result=mysqli_query($con,$qy);
 
 	while ($row=mysqli_fetch_array($result)) {
@@ -59,10 +59,14 @@ $qy="select *from originparticipants where event_name='T-Shirt painting'";
 
 </div>
 
+<button class="btn btn-danger float-right" onclick="window.print()">Print</button>
 <!-- </div>
  --></div>
 <?php
 include('includes/links/scriptlinks.php');
+?>
+<?php 
+include('includes/links/js/adsidenav_script.js');
 ?>
 </body>
 </html>

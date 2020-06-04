@@ -1,3 +1,9 @@
+<style>
+.mainnav
+{
+background-color: #8c221b!important;
+}
+</style>
 <div class="schoolnav">
 				<nav class="navbar navbar-expand-lg navbar-dark">
 					<h2 class="text-center text-success">welcome <?php echo $_SESSION['schname'];?></h2>
@@ -33,7 +39,7 @@
 							</li>
 					
 							<li>
-								<a href="schoollogin.php"><button  class="btn btn-outline-light btn-sm btn-danger" type="submit">logout</button></a>
+								<a href="schoollogin_form.php"><button  class="btn btn-outline-light btn-sm btn-danger" type="submit">logout</button></a>
 							</li>
 						</ul>
 					</div>

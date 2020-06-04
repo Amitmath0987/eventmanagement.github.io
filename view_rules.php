@@ -1,14 +1,14 @@
 <?php
 session_start();
 if(!isset($_SESSION['schname']))
-	header('location:schoollogin.php');
+	header('location:schoollogin_form.php');
 ?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>School Results</title>
+	<title>Event Rules</title>
 	<?php
 include('includes/links/stylelinks.php');
 	?>
@@ -21,7 +21,7 @@ include('includes/links/stylelinks.php');
 <!-- <div class="row"> -->
 <div class="col-lg-12 col-md-12 col-12 pt-4">
 	<h1 class="text-center text-danger text-uppercase">Origin Rules</h1>
-	<table class=" table  table-striped table-bordered table-hover">
+	<table class=" table  table-striped table-bordered table-hover table-responsive-sm">
 	<tr class="text-center bg-dark text-white">
 		
 		<th>Rules file</th>
@@ -55,6 +55,9 @@ $qy="select *from origin_rules";
 
 <!-- </div>
  --></div>
+ <?php
+		include("footers/school_footer.php");
+		?>
 <?php
 include('includes/links/scriptlinks.php');
 ?>

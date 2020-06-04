@@ -4,6 +4,10 @@ margin: 0;
 padding: 0;
 font-family: 'Josefin Sans',sans-serif;
 }
+html
+{
+scroll-behavior: smooth;
+}
 /* .navbar {
 -webkit-box-shadow: 0 8px 6px -6px #999;
 -moz-box-shadow: 0 8px 6px -6px #999;
@@ -16,24 +20,25 @@ height: 70px;
 width: 100%;
 height:60vh;
 }
-
 /* upcoming section style */
 .upcomingheading
 {
-	width: 192px;
-    margin-left: auto;
-    margin-right:auto;
+width: 192px;
+margin-left: auto;
+margin-right:auto;
 }
 /* form_style *  */
 .heading{
 width: 100%;
 height:80px;
 padding-top: 25px;
-background:-webkit-linear-gradient(left, #ec2235, #8811c5);
-} 
+background: #8c221b;
+/* background:-webkit-linear-gradient(left, #ec2235, #8811c5); */
+}
 /* register form style */
 .formmain-div{
-margin-top: 36px;
+margin-top: 30px;
+margin-bottom: 20px;
 padding-left: 5px;
 padding-right: 5px;
 padding-bottom: 5px;
@@ -42,14 +47,13 @@ box-shadow: 5px 10px 20px 0px;
 /* login form style */
 .maindiv-form
 {
-margin-top: 85px;
+margin-top: 40px;
+margin-bottom: 40px;
 padding-left: 5px;
 padding-right: 5px;
 padding-bottom: 5px;
 box-shadow: 5px 10px 20px 0px;
 }
-
-
 /* events gallery style */
 .gallery-header
 {
@@ -59,19 +63,14 @@ padding-top: 15px;
 padding-bottom: 15px;
 background:-webkit-linear-gradient(left, #ec2235, #8811c5);
 }
-
-
 /* admin form style
-
 /* admin login style */
-
 .admin-heading{
 width: 100%;
 height:80px;
 padding-top: 25px;
 background:-webkit-linear-gradient(left, #ec2235, #8811c5);
 }
-
 .ad-maindiv-form
 {
 margin-top: 85px;
@@ -80,8 +79,6 @@ padding-right: 5px;
 padding-bottom: 5px;
 box-shadow: 5px 10px 20px 0px;
 }
-
-
 /* admin registeration style */
 .ad-reg-maindiv-form
 {
@@ -91,16 +88,13 @@ padding-right: 5px;
 padding-bottom: 5px;
 box-shadow: 5px 10px 20px 0px;
 }
-
 .admin-reg-heading{
 width: 100%;
 height:80px;
 padding-top: 25px;
 background:-webkit-linear-gradient(left, #ec2235, #8811c5);
 }
-
 /* school registration form style */
-
 .schlmain-div
 {
 margin-top: 85px;
@@ -109,7 +103,6 @@ padding-right: 5px;
 padding-bottom: 5px;
 box-shadow: 5px 10px 20px 0px;
 }
-
 .schl-reg-heading
 {
 width: 100%;
@@ -117,9 +110,7 @@ height:80px;
 padding-top: 25px;
 background:-webkit-linear-gradient(left, #ec2235, #8811c5);
 }
-
 /* school login style */
-
 .schlogin-maindiv-form
 {
 margin-top: 85px;
@@ -128,146 +119,179 @@ padding-right: 5px;
 padding-bottom: 5px;
 box-shadow: 5px 10px 20px 0px;
 }
-
-.schlogin-heading 
+.schlogin-heading
 {
 width: 100%;
 height:80px;
 padding-top: 25px;
 background:-webkit-linear-gradient(left, #ec2235, #8811c5);
 }
-
-
-
-
-
 /* admin sidenav style */
-
 .tophead
 {
-	width: 100%;
-	height: 65px;
-	background: -webkit-linear-gradient(left, #ec2235, #8811c5);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	box-shadow: 17px -4px 13px 6px;
+width: 100%;
+height: 65px;
+/* background: -webkit-linear-gradient(left, #ec2235, #8811c5); */
+background-color: #8c221b;
+display: flex;
+justify-content: space-between;
+align-items: center;
+box-shadow: 17px -4px 13px 6px;
+margin-bottom: 100px;
 }
 .brandlogo
 {
-	color: #fff;
-	font-size: 2.1rem;
-	padding-left: 50px;
+color: #fff;
+font-size: 2.1rem;
+padding-left: 50px;
 }
 .menulines
 {
-	font-size: 30px;
-	cursor: pointer;
-	margin-right: 50px;
-	color: #fff;
+font-size: 30px;
+cursor: pointer;
+margin-right: 50px;
+color: #fff;
 }
 .sidenav
 {
-	height: 100%;
-	width: 0px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	background: -webkit-linear-gradient(right, #ec2235, #8811c5);
-	overflow-x: hidden;
-	padding-top: 60px;
-	transition: all 0.5s;
-	padding-left: 5px;
-	padding-right: 5px;
-	/* margin-top: 0px; */
-	box-shadow: -3px 15px 13px 6px;
+height: 100%;
+width: 0px;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1;
+/* background: -webkit-linear-gradient(right, #ec2235, #8811c5); */
+background-color: #8c221b;
+overflow-x: hidden;
+margin-top: 0px;
+margin-bottom: 20px;
+padding-top: 60px;
+transition: all 0.5s;
+padding-left: 5px;
+padding-right: 5px;
+box-shadow: -3px 15px 13px 6px;
 }
-
 .maincontent
 {
-	margin-top: 50px;
-	margin-left: 100px;
+margin-top: 50px;
+/* margin-left: 100px; */
+height:auto;
 }
 .sidenav a{
-	text-decoration: none;
-	color: #fff;
-	font-size: 20px;
-	display: block;
+text-decoration: none;
+color: #fff;
+font-size: 20px;
+display: block;
 padding-top: 4px;
 padding-bottom: 30px;
 padding-left: 30px;
 }
 .sidenav a:hover{
-	color: rgba(255, 255, 255, 0.6);
+color: rgba(255, 255, 255, 0.6);
 }
-
 .closebutton
 {
-	position: absolute;
-    top: 0px;
-    /* right: 15px; */
-    font-size: 35px!important;
+position: absolute;
+top: 0px;
+/* right: 15px; */
+font-size: 35px!important;
 }
-
-hr { 
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 3px;
-} 
+hr {
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 3px;
+}
 h2{
-	display: block;
-	padding-top: 0px;
+display: block;
+padding-top: 0px;
 }
-
-
 /* schooldashboard navbar */
 .schoolnav
 {
-	background:-webkit-linear-gradient(left, #ec2235, #8811c5);
-	box-shadow: 0px 0px 10px 0px;
+background-color: #8c221b!important;
+/* background:-webkit-linear-gradient(left, #ec2235, #8811c5); */
+box-shadow: 0px 0px 10px 0px;
 }
 /* schooldashboard notice section */
 .notice
 {
-	float: right;
-	margin-right: 20px;
-	height:300px;
-	width: 300px;
-	box-shadow: 0px 0px 10px 0px;
-	background-color:lightblue;
-	padding: 10px;
+float: right;
+margin-right: 20px;
+height:300px;
+width: 300px;
+box-shadow: 0px 0px 10px 0px;
+background-color:lightblue;
+padding: 10px;
 }
 /* feedback form style start*/
 .feedbackform
 {
-	margin: auto;
-	margin-top: 5px;
-	width:60%;
-	box-shadow: 0px 0px 20px 0px;	
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+width:80%;
+box-shadow: 0px 0px 20px 0px;
 }
 .feedhead
 {
 height: 50px;
 padding-top: 4px;
-background:-webkit-linear-gradient(left, #ec2235, #8811c5);
+background: #8c221b;
+/* background:-webkit-linear-gradient(left, #ec2235, #8811c5); */
 }
 .formcontent
 {
-	margin: auto;
-	padding-top: 50px;
-	padding-left: 100px;
-	padding-right: 100px;
-	padding-bottom: 50px;
+padding-top: 20px;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 50px;
 }
 /* end of feedback form style */
 .answer
 {
-	height: 400px;
-	width: 300px;
-	margin-left: 200px;
+height: 400px;
+width: 300px;
+margin-left: 200px;
+}
+
+/* footer style */
+.footer_style
+{
+	background: #8c221b;
+}
+.a_style
+{
+	text-decoration: none;
+	color: white;
+}
+.a_style:hover
+{
+	text-decoration: none;
+	color: grey;
+}
+
+.gotop{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #27ae60;
+	bottom: 40px;
+	right: 10px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+    /* transition: background 0.5s; */
+}
+.gotop:hover{
+	color: red;
+}
+.admin_section
+{
+	height: 100vh;
+	width: 100%;
 }

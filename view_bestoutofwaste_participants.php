@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['name']))
-	header('location:adminlogin.php');
+	header('location:adminlogin_form.php');
 ?>
 
 
@@ -19,7 +19,7 @@ include('includes/links/stylelinks.php');
 <!-- <div class="row"> -->
 <div class="col-lg-12 col-md-12 col-12">
 	<h1 class="text-center text-danger text-uppercase">Best Out of Waste participants</h1>
-	<table class=" table  table-striped table-bordered table-hover">
+	<table class=" table  table-striped table-bordered table-hover table-responsive-sm">
 	<tr class="text-center bg-dark text-white">
 		<th>School name</th>
 		<th>Team no.</th>
@@ -58,11 +58,14 @@ $qy="select *from originparticipants where event_name='Best Out of Waste'";
 	</table>
 
 </div>
-
+<button class="btn btn-danger float-right" onclick="window.print()">Print</button>
 <!-- </div>
  --></div>
 <?php
 include('includes/links/scriptlinks.php');
+?>
+<?php 
+include('includes/links/js/adsidenav_script.js');
 ?>
 </body>
 </html>

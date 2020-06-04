@@ -12,14 +12,22 @@ if(!isset($_SESSION['name']))
 		?>
 	</head>
 	<body>
+		<header>
 		<?php
-include('includes/navbars/schoolnav.php');
+			include('includes/navbars/admin_tophead2.php');
+			?>
+			<!-- sidenav start -->
+		<?php
+			include('includes/navbars/admin_sidenav.php');
 		?>
+		<!-- end of sidenav -->
+	</header>
+	<section class="maincontent">
 		<div class="container">
 			<!-- <div class="row"> -->
 			<div class="col-lg-12 col-md-12 col-12">
 				<h1 class="text-center text-danger text-uppercase">origin participants</h1>
-				<table class=" table  table-striped table-bordered table-hover">
+				<table class=" table  table-striped table-bordered table-hover table-responsive-sm">
 					<tr class="text-center bg-dark text-white">
 						<th>School name</th>
 						<th>Team no.</th>
@@ -50,9 +58,19 @@ include('includes/navbars/schoolnav.php');
 				</table>
 			</div>
 			<button class="btn btn-danger float-right" onclick="window.print()">Print</button>
-		</div>
+		</div><br><br>
+
+		<?php
+		include('admin_footer.php');
+		?>
+		<a href="#" class="gotop">
+			<i class="fas fa-arrow-up"></i>
+		</a>
 		<?php
 		include('includes/links/scriptlinks.php');
+		?>
+		<?php 
+include('includes/links/js/adsidenav_script.js');
 		?>
 	</body>
 </html>

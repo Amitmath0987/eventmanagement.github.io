@@ -1,6 +1,6 @@
 
 <?php
-header('location:adminlogin.php');
+header('location:adminlogin_form.php');
 ?>
 
 
@@ -12,14 +12,7 @@ header('location:adminlogin.php');
 	
 // to connect with the database
 include("connection.php");
-// if ($con) {
-// 	echo "connection successful";
-// } else {
-// 	echo "no connection";
-// }
-// to select database from database
-// $db=mysqli_select_db($con,'eventmanagement_db');
-// to check that if user only clicks on submit,otherwise no need to run query
+
 if(isset($_POST["submit"]))
 {
 $name=$_POST["username"];
@@ -44,7 +37,6 @@ $pass=$_POST["password"];
 // }else{
 
 $qy="INSERT INTO `admin_info`(`name`, `email`, `password`) VALUES('$name','$email1','$pass')"; 
-// $qy="INSERT INTO `admin_info`(`name`, `email`, `password`) VALUES ('$name','$email1','$pass')";
 	$result1=mysqli_query($con,$qy);
 
 }

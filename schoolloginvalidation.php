@@ -16,6 +16,7 @@ while ($row=mysqli_fetch_array($result)) {
 	$schoolname=$row['school_name'];
  		$status=$row['status'];
  		$sch_id=$row['sch_id'];
+ 		$email=$row['email'];
  	}
 
 
@@ -24,11 +25,12 @@ session_start();
 $_SESSION['schname']=$schoolname;
 $_SESSION['status']=$status;
 $_SESSION['sch_id']=$sch_id;
+$_SESSION['email']=$email;
 header('location:upload_permission_form.php');
 }
 
 else{
-header('location:schoollogin.php');
+header('location:schoollogin_form.php');
 }
 }
 ?>

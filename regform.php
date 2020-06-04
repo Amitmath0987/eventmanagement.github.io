@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,9 +11,13 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	</head>
 	<body>
+		<?php
+		include('includes/navbars/mainnav.php')
+		?>
 		<div class="container">
 			<div class="formmain-div">
 				<div class="heading text-center text-white text-uppercase"><h4 class="animated heartBeat">student registration</h4></div>
+				<div class="formcontent">
 				<form action="rstuinfo.php" method="post" class="needs validation">
 					<div class="form-group">
 						<label class="my-3">Student Name</label>
@@ -50,19 +53,26 @@
 						<label for="password">Password</label>
 						<input type="password" name="password" placeholder="Enter password" value="" class="form-control" required >
 					</div>
-
 					<div class="forregister">
 						<div class="form-group">
 							<label>Already have an account</label>
-							<a href="login.php">click here</a>
+							<a href="stulogin_form.php">click here</a>
 						</div>
 					</div>
 					<button type="submit" name="submit" class="btn btn-danger">Register</button>
 					
 				</form>
+			</div>
 				
 			</div>
 		</div>
+
+		<?php
+		include("footers/footer.php");
+		?>
+		<a href="#" class="gotop">
+			<i class="fas fa-arrow-up"></i>
+		</a>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

@@ -35,8 +35,7 @@ if(mysqli_num_rows($result)>0){
 	header('location:admindashboard.php');
 
 }else{
-	echo "wrong email and password";
-	 header('location:adminlogin.php');
+	 header('location:adminlogin_form.php');
 
 }
 

@@ -1,22 +1,15 @@
 <?php
 session_start();
  if(!isset($_SESSION['username']))
- 	header('location:login.php');
-
-
+ 	header('location:stulogin_form.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>student dashboard</title>
-	<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-		
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!-- animate css link -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<?php
+		include('includes/links/stylelinks.php');
+		?>
 </head>
 <body><header>
 			<div class="schoolnav">
@@ -33,7 +26,7 @@ session_start();
 							</li>
 							
 							<li class="nav-item">
-								<a class="nav-link" href="feedback.php">Event gallery</a>
+								<a class="nav-link" href="stuevent.php">Events participation</a>
 							</li>
 
 							<li class="nav-item">
@@ -41,28 +34,30 @@ session_start();
 							</li>
 							
 							<li class="nav-item">
-								<a  class="nav-link" href="#aboutorigin.php">About origin</a>
-							</li>
-							<li class="nav-link">
-								<a href="#rules.php" class="text-white">Rules</a>
+								<a class="nav-link" href="feedback.php">Rules</a>
 							</li>
 
 							<li>
-								<a href="login.php"><button type="submit">logout</button></a>
+								<a href="stulogin_form.php"><button  class="btn btn-outline-light btn-sm btn-danger" type="submit">logout</button></a>
 							</li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 		</header>
+
+		<section>
+			<?php
+			include("stuparticipants_form.php");
+
+			?>
+			<a href="#" class="gotop">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+		</section>
 		<?php
 		include('includes/links/scriptlinks.php');
 		?>
-
-
-
-	
-
 
 </body>
 </html>

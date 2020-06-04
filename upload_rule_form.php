@@ -1,3 +1,8 @@
+<?php
+session_start();
+if(!isset($_SESSION['name']))
+	header('location:adminlogin_form.php');
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,6 +12,17 @@
 		?>
 	</head>
 	<body>
+		<header>
+			<?php
+				include('includes/navbars/admin_tophead2.php');
+			?>
+			<!-- sidenav start -->
+			<?php
+				include('includes/navbars/admin_sidenav.php');
+			?>
+			<!-- end of sidenav -->
+		</header>
+		<div class="maincontent">
 		<div class="container">
 			<div class="maindiv-form mt-5">
 				<div class="heading text-center text-white text-uppercase"><h4 class="animated heartBeat">upload Rules</h4></div>
@@ -21,8 +37,15 @@
 				
 			</div>
 		</div>
+	</div><br>
+		<?php
+		include('admin_footer.php');
+		?>
 		<?php
 		include('includes/links/scriptlinks.php');
+		?>
+		<?php
+		include('includes/links/js/adsidenav_script.js');
 		?>
 	</body>
 </html>

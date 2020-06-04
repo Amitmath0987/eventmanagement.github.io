@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['schname']))
-	header('location:schoollogin.php');
+	header('location:schoollogin_form.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,9 +21,8 @@ if(!isset($_SESSION['schname']))
 		include('includes/links/scriptlinks.php');
 		?>
 		<section class="py-5">
-			<div>
-				
-				<h1 class="animated bounceInDown delay-0s duration-5s text-warning text-center">welcome to participant in origin Event  <br>ORGANISED BY PG DEPARTMENT OF COMPUTER SCIENCE & IT(Doaba College)</h1>
+			<div class="jumbotron">
+				<h1 style="color: #8c221b" class="animated bounceInDown delay-0s duration-5s text-center">welcome to participant in origin Event  <br>ORGANISED BY PG DEPARTMENT OF COMPUTER SCIENCE & IT(Doaba College)</h1>
 			</div>
 			
 		</section>
@@ -34,5 +33,16 @@ if(!isset($_SESSION['schname']))
 				</a>
 				</marquee>
 			</div>
+			<div>
+				<a href="#" class="gotop">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+			<?php
+		include("footers/school_footer.php");
+		?>
+		<a href="#" class="gotop">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+	</div>
 	</body>
 </html>
