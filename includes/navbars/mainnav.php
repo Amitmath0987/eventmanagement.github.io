@@ -5,7 +5,7 @@ background-color: #8c221b!important;
 }
 </style>
 <nav class="mainnav navbar navbar-expand-lg navbar-dark">
-	<a class="navbar-brand" href="#">Doaba college Events management</a>
+	<a class="navbar-brand" href="#">College Events management</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 	</button>
