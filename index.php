@@ -76,7 +76,7 @@ session_destroy();
 					
 					?>
 					<div class="col-lg-4 col-md-4 col-12">
-						<div class="card bg-light my-2" style="height: 300px">
+						<div class="card cardclass bg-light my-2" style="height: 300px">
 							<img class="card-img-top" src="<?php echo $row['event_image']?>"alt="Card image" style="width: 100%;height: 130px">
 							<div class="card-body">
 								<h4 class="card-title text-center text-danger"><?php echo $row['event_name']?></h4>
