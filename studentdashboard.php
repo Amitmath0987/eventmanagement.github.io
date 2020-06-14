@@ -26,7 +26,7 @@ session_start();
 							</li>
 							
 							<li class="nav-item">
-								<a class="nav-link" href="stuevent.php">Events participation</a>
+								<a class="nav-link" href="stuevent.php">Your participation</a>
 							</li>
 
 							<li class="nav-item">

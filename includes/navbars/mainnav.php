@@ -15,7 +15,7 @@ background-color: #8c221b!important;
 				<a class="nav-link" href="index.php">Home <span class="sr-only"></span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#aboutus">Aboutus</a>
+				<a class="nav-link" href="aboutus.php">Aboutus</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="eventgallery.php">Events Gallery</a>
